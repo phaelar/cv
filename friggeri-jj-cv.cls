@@ -52,12 +52,13 @@
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
-\newfontfamily\bodyfont[]{Goudy Bookletter 1911}
-\newfontfamily\thinfont[]{GoudyBookletter1911Light}
-\newfontfamily\headingfont[]{GoudyBookletter1911Bold}
+\newfontfamily\bodyfont[]{Roboto-Regular}
+\newfontfamily\thinfont[]{Roboto-Thin}
+\newfontfamily\headingfont[]{Roboto-Medium}
+\newfontfamily\positionfont[]{Roboto-LightItalic}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Goudy Bookletter 1911}
+\setmainfont[Mapping=tex-text, Color=textcolor]{Roboto-Light}
 
 %\setmathfont{XITS Math}
 
@@ -188,7 +189,7 @@
 \DeclareBibliographyDriver{article}{%
     {%
       \addfontfeature{Color=lightgray}\itshape%
-      \printfield{title}  \footnotesize\printnames{author}; 
+      \printfield{title}  \footnotesize\printnames{author};
     \usebibmacro{journal+issuetitle}%
     \setunit{\space}%
     \printfield{pages}%
@@ -204,7 +205,7 @@
 \DeclareBibliographyDriver{inproceedings}{%
    {%
       \addfontfeature{Color=lightgray}\itshape%
-      \printfield{title}  \footnotesize\printnames{author}; 
+      \printfield{title}  \footnotesize\printnames{author};
     \printfield{booktitle}%
     \setunit{\addcomma\space}%
     \printfield{year}%
